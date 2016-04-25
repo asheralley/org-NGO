@@ -1,0 +1,360 @@
+/*
+Custom Css
+Asher Alley
+*/
+
+/*body {
+	margin:0;
+	background: url(../images/seal-net-crop-1400.jpg) fixed;
+	background-size: cover;
+}*/
+
+body {
+	margin: 0;
+	font-family:'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+/*.content{
+	font-family: 'Slabo 27px', serif;
+}*/
+
+/*Layout
+-------------------------------------*/
+
+header {
+	width: 100%;	
+}
+
+em {
+	font-weight: bold;
+}
+
+.hero-container { 
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	/*height: vh;*/	/*check this*/
+}
+
+.hero-img {
+	width: 100%;
+	height: 100%;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.36);
+	overflow: hidden;
+	z-index: 20;
+}
+
+.logo-ss-odn {
+	z-index: 30;
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.ss-logo {
+	height: 75px;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 0;
+	padding: 5px 3px; 
+}
+
+.ss-logo a:hover{
+	
+}
+
+.odn-logo {
+	height: 75px;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 20px;
+	padding: 5px 5px; 
+}
+
+.mobile-grab {
+	z-index: 30;
+	position: absolute;
+	padding: 0;
+	font-size: 1.9em;
+	top: 15%;
+	left: 6%;
+	margin: 20px;
+	width: 33%;
+}
+
+.mobile-cta{
+/*	background: #1F91F2;*/
+	width: 100%;
+	color: #dddddd;
+	font-size: 1.3em;
+	text-align: left;
+}
+
+.cta-content {
+	padding: 0;
+	margin: 0;
+}
+
+.mobile-buttons {
+	font-size: 0.8em;
+	font-weight: 300;
+	color: white;
+	text-decoration: none;
+	display: flex;
+	justify-content: space-between; /* webkits! */
+}
+
+.mobile-donate,
+.learn-more {
+	display: inline-block;
+	border: 1px white solid;
+	border-radius: 2px;
+	margin-top: 1.5em;
+	margin-right: 3em;
+	padding: .3em 0;
+	text-align: center;
+	width: 40%;
+	color: white;
+	height: 44px;
+	text-decoration: none;
+}
+
+
+.mobile-donate:hover,
+.learn-more:hover {
+	text-decoration: none;
+	background: white;
+	color: #072A54;
+	font-weight: bold;
+}
+
+.mobile-donate a:visited {
+	text-decoration: none !important;
+}
+
+
+footer {
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	margin: 0 auto;
+	width: 100%;
+	z-index: 25;
+	bottom: -198px;
+	transition: all ease-in-out 1s;
+}
+
+footer:hover {
+	bottom: 0;
+}
+
+.footer-upper {
+	width: 100%;
+	height: 5em;
+}
+
+.arrows {
+	position: relative;
+	font-size: 45px;
+	color: #515151;
+	margin: 0 auto;
+	padding-bottom: 1px;
+	width: 1em;
+	z-index: 100;
+}
+
+.arrows:hover {
+	cursor: pointer;
+}
+
+.sm-buttons{
+	list-style: none;
+	text-align: center;
+	padding: 1.1em;
+	margin: 1em;
+}
+
+.sm-buttons li {
+	display: inline-block;
+	margin-right: 0.5em;
+	text-align: center;
+	position: relative;
+	top: 16px;
+}
+
+.sm-buttons a {
+	display: block;
+	background: #dddddd;
+	color: #515151;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+}
+
+.sm-buttons li a i {
+	position: relative;
+	top: 10px;
+	font-size: 25px;
+}
+
+
+
+.links{
+	font-size: 1.1em;
+	color: white;
+	margin: 0 auto;
+	width: 16.5em;
+	text-align: center;
+	padding: 1.2em;
+}
+
+.links a {
+	color: white;
+}
+
+
+/*Media Queries
+------------------------------------------*/
+
+@media screen and (max-width: 1080px){
+	
+
+
+
+	.mobile-donate, 
+	.learn-more {
+		margin-right: 2em;
+	}
+
+	footer{
+		bottom: 0;
+	}
+	.arrows {
+		display: none;
+	}
+
+	.mobile-grab {
+		top: 13%;
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 880px){
+	.hero-container{
+		height: 842px;
+	}
+
+	.ss-logo,
+	.odn-logo {
+		height: 60px;
+	}
+
+	.mobile-grab {
+		width: 60%;
+	}
+	
+
+}
+
+@media screen and (max-width: 640px){
+	.hero-container {
+		height: 842px;
+	}
+
+	.logo-ss-odn {
+		justify-content: space-between; /*webkit*/
+	}
+
+	.mobile-grab {
+		width: 70%;
+	}
+	
+
+}
+
+@media screen and (max-width: 489px){
+	.hero-container {
+		position: relative;
+		background: #031832;
+		height: 100%;
+		width: 100%;
+	}
+
+	.logo-ss-odn {
+		justify-content: space-between; /*webkit*/
+	}
+
+	.ss-logo,
+	.odn-logo {
+		height: 60px;
+	}
+
+	footer{
+		bottom: 0;
+		height: 113px;
+	}
+	.arrows {
+		display: none;
+	}
+
+	.mobile-grab {
+		width: 80%;
+		top: 14%;
+		font-size: 1.4em;
+	}
+
+	.mobile-buttons {
+		font-size: 1em; 
+	}
+
+	.mobile-donate,
+	.learn-more {
+		margin-right: 1.2em;
+	}
+
+	.footer-lower {
+		display: none;
+	}
+
+	.sm-buttons {
+		bottom: 10%;
+		position: absolute;
+		width: 93%;
+	}
+
+	.sm-buttons li {
+		margin-right: 1em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
